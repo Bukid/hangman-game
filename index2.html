@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<link rel="stylesheet" type="text/javascript" href="javascript.js">
+	<link rel="stylesheet" type="text/css" href="portfolio/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="portfolio/css/style.css">
+		<title>Hangman!</title>
+		<style>
+			html, body{
+				padding: 0;
+				border: 0;
+				width: 100%;
+				height: 100%
+			}
+
+			div {
+				box-sizing: border-box;
+				background: grey;
+				border: 1px solid black;
+			}
+			#top{
+				width: 100%;
+				height:15%;
+
+			}
+
+			#middle{
+				width: 100%;
+				height: 70%;
+
+			}
+
+			#bottom{
+				width: 100%;
+				height: 15%;
+			}
+
+			#leftSide{
+				height: 100%;
+				width: 50%;
+				float: left;
+
+			}
+
+			#rightSide{
+				height: 100%;
+				width:50%;
+				float: left;
+			}
+			#userInput{
+				height: 20%;
+				width: 75%;
+				clear:both;
+			}
+
+			#hintBox{
+				height: 54%;
+				width: 40%;
+				float: left;
+				margin-left: 25px;
+				margin-top: 50px;
+				}
+			#letterBox{
+				height: 54%;
+				width: 40%;
+				float: left;
+				margin-left:50px;
+				margin-top: 50px;
+			}
+
+			#hero-quotes{
+				font-family: "Times New Roman", Times, serif;
+				font-weight: bold;
+			}
+		</style>
+
+	</head>
+	<body>
+
+			 <script  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  						integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  						crossorigin="anonymous"></script>
+
+
+
+			<script type="text/javascript">
+
+				var hangmanGame ={ 
+
+					words: [
+
+					{
+						word: "Omniknight",
+						hint: "A meele support healer"
+					},
+
+					{
+						word: "Earth Spirit"
+						hint: "This hero was a consistent pick in the Kiev Major for team TNC. A level 3 difficulty hero"
+					},
+
+					{
+						word: "Pudge fountain hook"
+						hint: "This glitch was exploited by Navi Dendi and Puppey against one of the chinese teams back in the early days of the TI. This was a combo between Pudge and Chen"
+					}
+
+					var randomNum = Math.floor(Math.random() * hangmanGame.words.length); 
+					var randomWord = hangmanGame.words[randomNum].word;
+					var randomWordHint = hangmanGame.words[randomNum].hint;
+
+
+
+				var useChoice=[a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z]
+
+				var userGuesses= 0;
+				var wrongGuesses= 0;
+
+				document.onkeyup = function(event) {
+				var userGuess = event.key;
+
+				if ((userGuess === true
+
+
+
+		</script>
+
+				<div id = "top">
+
+				<center>DOTA 2 HANGMAN!</center>
+			
+		</div>
+		<div id = "middle">
+		
+			<div id="leftSide">
+				<img src="" alt="">
+				
+			</div>
+
+			<div id="rightSide">
+				
+
+				
+				<div id="hintBox">
+					
+				</div>
+				
+				<div id="letterBox">
+					
+				</div>
+
+
+			</div>
+			
+		</div>
+		<div id = "bottom">
+
+		<p id= "hero-quotes">Alone is best but sometimes you need mates. If worse comes to worse you can eat them -Slark</p>
+			
+		</div>
+	</body>
+
+	<footer>
+			<div class="container">
+			&copy; Copyright 2017 Roland-Patrick Castanos
+			</div>
+		</footer>
+</html>
